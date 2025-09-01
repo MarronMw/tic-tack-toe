@@ -1,0 +1,78 @@
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.game-board {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(60, 60, 60, 0.15);
+  padding: 32px;
+  margin-right: 40px;
+}
+
+.status {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #43c6ac;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background: #e0eafc;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(67, 198, 172, 0.08);
+  color: #43c6ac;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.square:hover {
+  background: #43c6ac;
+  color: #fff;
+}
+
+.game-info {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(60, 60, 60, 0.1);
+  padding: 32px;
+  min-width: 220px;
+}
+
+.game-info ol {
+  padding-left: 20px;
+}
+
+.game-info button {
+  background: #43c6ac;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.game-info button:hover {
+  background: #f8ffae;
+  color: #43c6ac;
+}
